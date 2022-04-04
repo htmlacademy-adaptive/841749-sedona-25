@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Mihails Bodrins](https://up.htmlacademy.ru/adaptive/25/user/841749).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Дроганов](https://htmlacademy.ru/profile/dmdragon).
 
 ---
 
