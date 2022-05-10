@@ -1,0 +1,88 @@
+// Font face
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  src: url("./fonts/ptsans.woff") format(woff);
+  src: url("./fonts/ptsans.woff2") format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  src: url("./fonts/ptsansbold.woff") format(woff);
+  src: url("./fonts/ptsansbold.woff2") format(woff2);
+  font-display: swap;
+}
+
+// Global
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  max-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+h2,
+h3,
+h4 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  border-style: none;
+}
+
+b {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.button {
+  display: inline-block;
+  max-width: 458px;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
