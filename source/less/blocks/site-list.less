@@ -1,0 +1,29 @@
+// @import "./blocks/site-list.less";
+.site-list__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    min-height: 56px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  .site-list__item a {
+    font-weight: 700;
+  }
+
+  .site-list__logo {
+    display: block;
+    position: relative;
+  }
+
+  .site-list__link {
+    width: 185px;
+    position: absolute;
+    top: -27px;
+    left: -15px;
+  }
+}
