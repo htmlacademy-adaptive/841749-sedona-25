@@ -16,6 +16,19 @@
   min-width: 320px;
   min-height: 100%;
   margin: 0;
-  background-color: @white;
   color: @black;
+}
+
+@media (min-width: @desktop-width) {
+  .page-body {
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: #e7e5e5;
+    box-shadow: 0 5px 15px #00010133;
+    // предположение, тень не работает
+  }
+
+  .page-body__wrapper {
+    background-color: @white;
+  }
 }
