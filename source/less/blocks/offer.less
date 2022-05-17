@@ -20,14 +20,56 @@
   padding-bottom: 30px;
 }
 
-.offer__button {
-  margin-bottom: 10px;
-  font-size: 21px;
-  min-width: 100%;
+.offer__description br:nth-child(2) {
+  display: none;
 }
 
-.offer__map-wrapper {
+.offer__button {
+  width: 284px;
+  margin-bottom: 10px;
+  font-size: 21px;
+}
+
+.offer__map {
   height: 350px;
   margin-bottom: 19px;
+  background-image: url("/img/offer-map-marker.svg"), url("/img/offer-map-mobile.png");
+  background-position: center, center;
+  background-repeat: no-repeat;
   background-color: #d3e3b4;
+  background-size: 27px, cover;
+}
+
+@media (min-width: @tablet-width) {
+  .offer__sentence {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .offer__description br:first-child,
+  .offer__description br:last-child {
+    display: none;
+  }
+
+  .offer__description br:nth-child(2) {
+    display: inline;
+  }
+
+  .offer__button {
+    width: 458px;
+  }
+
+  .offer__map {
+    height: 350px;
+    background-image: url("/img/offer-map-marker.svg"), url("/img/offer-map-tablet.png");
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: 27px, cover;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .offer__map {
+    background-image: url("/img/offer-map-marker.svg"), url("/img/offer-map-desktop.png");
+  }
 }
