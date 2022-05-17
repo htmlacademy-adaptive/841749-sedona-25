@@ -77,6 +77,38 @@
                 <input class="field__input" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
               </div>
             </div>
+
+            <div class="testimonials-filters__group contact">
+              <label class="testimonials-filters__title">Контактная информация:</label>
+              <div class="field-contact">
+                <label class="field-contact__name" for="phone">Контактный телефон<sup>*</sup>:</label>
+                <input class="field-contact__input" type="tel" id="phone" name="phone" placeholder="Введите телефон">
+              </div>
+              <div class="field-contact">
+                <label class="field-contact__name" for="email">Электронная почта<sup>*</sup>:</label>
+                <input class="field-contact__input" type="email" id="email" name="email" placeholder="Введите e-mail">
+              </div>
+            </div>
+
+            <div class="testimonials-filters__group visitor">
+              <label class="testimonials-filters__title">Ваше общее впечатление:</label>
+              <label class="radio-button__label">
+                <input class="radio-button__input" type="radio" name="opinion" value="positive" tabindex="1">
+                <span class="radio-button__mark"></span>
+                <span class="radio-button__text">Скорее положительное</span>
+              </label>
+              <label class="radio-button__label">
+                <input class="radio-button__input" type="radio" name="opinion" value="negative" tabindex="2">
+                <span class="radio-button__mark"></span>
+                <span class="radio-button__text">Скорее отрицательное</span>
+              </label>
+              <label class="radio-button__label">
+                <input class="radio-button__input" type="radio" name="opinion" value="abstain" tabindex="3">
+                <span class="radio-button__mark"></span>
+                <span class="radio-button__text">Затрудняюсь ответить</span>
+              </label>
+            </div>
+
           </div>
         </form>
       </main>

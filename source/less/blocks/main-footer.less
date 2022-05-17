@@ -69,3 +69,34 @@
   flex-flow: row nowrap;
   align-items: center;
 }
+
+@media (min-width: @tablet-width) {
+  .main-footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .main-footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .main-footer__hashtag {
+    padding: 0;
+    align-self: center;
+  }
+
+  .main-footer__social {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer__container {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}

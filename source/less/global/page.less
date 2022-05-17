@@ -1,0 +1,33 @@
+// @import "./global/page.less";
+
+.page {
+  height: 100%;
+  box-sizing: border-box;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  color: @black;
+}
+
+@media (min-width: @desktop-width) {
+  .page-body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #e7e5e5;
+    box-shadow: 0 5px 15px #00010133;
+  }
+
+  .page-body__wrapper {
+    background-color: @white;
+  }
+}
