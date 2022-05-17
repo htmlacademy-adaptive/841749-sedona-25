@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="page"  lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page-body">
+    <div class="page-body__wrapper">
+      <header class="main-header">
+        <div class="main-header__wrapper">
+          <a class="main-header__logo" href="index.html" aria-label="Sedona">
+            <img class="main-header__logo-image" src="img/logotype-phone.svg" width="185" height="96" alt="Город Седона">
+          </a>
+          <nav class="main-nav main-nav--closed">
+            <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                  <a href="index.html">
+                    Главная
+                  </a>
+                </li>
+                <li class="site-list__item">
+                  <a href="catalog.html">
+                    Фото и видео
+                  </a>
+                </li>
+                <li class="site-list__item site-list__logo">
+                  <a class="site-list__link" href="index.html" aria-label="Sedona">
+                    <img class="main-header__logo-image" src="img/logotype-phone.svg" width="185" height="96" alt="Город Седона">
+                  </a>
+                </li>
+                <li class="site-list__item site-list__item--current">
+                  <a href="form.html">
+                    Форма отзыва
+                  </a>
+                </li>
+                <li class="site-list__item">
+                  <a href="https://htmlacademy.ru/">
+                    HTML Academy
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main class="main-form">
+
+        <h1 class="visually-hidden">Форма отзыва о городе Седона</h1>
+
+        <div class="catalog-intro">
+          <img class="catalog-intro__name" src="../img/text-sedona.svg" alt="надпись Седона">
+        </div>
+
+        <section class="review">
+          <h2 class="review__title">Оставьте свой отзыв</h2>
+          <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </section>
+
+        <form class="testimonials" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="testimonials-filters">
+            <div class="testimonials-filters__group visitor">
+              <label class="testimonials-filters__title">Представьтесь:</label>
+              <div class="field">
+                <label class="field__name" for="name">Имя<sup>*</sup>:</label>
+                <input class="field__input" type="text" id="name" name="name" placeholder="Пётр">
+              </div>
+              <div class="field">
+                <label class="field__name" for="surname">Фамилия<sup>*</sup>:</label>
+                <input class="field__input" type="text" id="surname" name="surname" placeholder="Пустота">
+              </div>
+              <div class="field">
+                <label class="field__name" for="patronymic">Отчество:</label>
+                <input class="field__input" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
+              </div>
+            </div>
+          </div>
+        </form>
+      </main>
+
+      <footer class="main-footer">
+        <div class="main-footer__container">
+          <div class="main-footer__hashtag">
+            <b class="hashtag">#visitSedona</b>
+          </div>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Мы в Вконтакте</span>
+                  <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M35.45 17.948C35.616 17.402 35.45 17 34.655 17H32.03C31.362 17 31.054 17.347 30.887 17.73C30.887 17.73 29.552 20.926 27.661 23.002C27.049 23.604 26.771 23.795 26.437 23.795C26.27 23.795 26.019 23.604 26.019 23.057V17.948C26.019 17.292 25.835 17 25.279 17H21.151C20.734 17 20.483 17.304 20.483 17.593C20.483 18.214 21.429 18.358 21.526 20.106V23.904C21.526 24.737 21.373 24.888 21.039 24.888C20.149 24.888 17.984 21.677 16.699 18.003C16.45 17.288 16.198 17 15.527 17H12.9C12.15 17 12 17.347 12 17.73C12 18.412 12.89 21.8 16.145 26.281C18.315 29.341 21.37 31 24.153 31C25.822 31 26.028 30.632 26.028 29.997V27.684C26.028 26.947 26.186 26.8 26.715 26.8C27.105 26.8 27.772 26.992 29.33 28.467C31.11 30.216 31.403 31 32.405 31H35.03C35.78 31 36.156 30.632 35.94 29.904C35.702 29.18 34.852 28.129 33.725 26.882C33.113 26.172 32.195 25.407 31.916 25.024C31.527 24.533 31.638 24.314 31.916 23.877C31.916 23.877 35.116 19.451 35.449 17.948H35.45Z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Мы в Телеграме</span>
+                  <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M34.4393 16.6223L31.2705 31.566C31.0313 32.6205 30.408 32.883 29.5223 32.3865L24.6938 28.8285L22.3643 31.0695C22.1063 31.3275 21.891 31.5428 21.3938 31.5428L21.741 26.6258L30.6893 18.54C31.0785 18.1935 30.6045 18.0008 30.0848 18.348L19.0223 25.314L14.2598 23.823C13.224 23.4998 13.2053 22.7873 14.4758 22.29L33.1035 15.1133C33.966 14.79 34.7205 15.3053 34.4393 16.623V16.6223Z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Мы в Ютубе</span>
+                  <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.1813 17H16.8133C15.3062 17 14 18.3 14 19.8V28.1C14 29.7 15.3062 31 16.8133 31H31.1813C32.7889 31 33.9946 29.7 33.9946 28.2V19.8C34.095 18.3 32.7889 17 31.1813 17ZM21.0333 27.4V20.6L27.8656 24L21.0333 27.4Z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__copyright copyright">
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="visually-hidden">HTML Academy</span>
+              <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
