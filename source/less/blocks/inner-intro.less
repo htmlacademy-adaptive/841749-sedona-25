@@ -15,12 +15,13 @@
 }
 
 .inner-intro__name {
-  padding-bottom: 5%;
+  margin: 0 auto;
+  padding-bottom: 3%;
 }
 
 @media (min-width: @tablet-width) {
   .inner-intro {
-    height: 289px;
+    height: 290px;
     background-image: url("/img/intro-triangle.svg"), url("/img/bg-inner-intro-tablet.png");
   }
 
@@ -31,6 +32,13 @@
 
 @media (min-width: @desktop-width) {
   .inner-intro {
+    height: 300px;
+    margin-bottom: 72px;
     background-image: url("/img/intro-triangle.svg"), url("/img/bg-inner-intro-desktop.png");
+  }
+
+  .inner-intro__name {
+    width: 460px;
+    padding-bottom: 2%;
   }
 }

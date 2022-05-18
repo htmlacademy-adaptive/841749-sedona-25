@@ -5,16 +5,25 @@
 }
 
 .gallery-list__header {
+  margin: 0 auto;
   padding-bottom: 42px;
 }
 
 .gallery-list__title {
   margin: 0;
   padding-bottom: 25px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 .gallery-list__description {
   margin: 0;
+  color: @dark;
+}
+
+.gallery-list__description br:nth-child(2) {
+  display: none;
 }
 
 .gallery-list__item {
@@ -24,9 +33,22 @@
 }
 
 .gallery-list__photo {
-  display: inline-block;
-  margin-bottom: 9px;
+  display: block;
+  height: 280px;
+  margin-bottom: 14px;
   background-color: #edbbaa;
+  background-size: 100%;
+}
+
+.gallery-list__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-list__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .gallery-list__item-subject {
@@ -41,19 +63,25 @@
   font-size: inherit;
   line-height: inherit;
   text-transform: none;
+  color: @dark;
+}
+
+.gallery-list__wrapper-button {
+  align-self: center;
 }
 
 .gallery-list__item-button {
   display: flex;
   flex-flow: row nowrap;
-  align-items: baseline;
+  align-items: center;
   padding: 0;
-  background-color: #ffffff;
   border: none;
+  background-color: inherit;
 }
 
 .gallery-list__item-icon {
-  padding-right: 12px;
+  padding-right: 10px;
+  padding-bottom: 4px;
 }
 
 .gallery-list__item-number {
@@ -61,4 +89,70 @@
   line-height: 21px;
   font-weight: 700;
   font-family: "PT Sans", "Arial", sans-serif;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery-list {
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+  }
+
+  .gallery-list__header {
+    margin-bottom: 19px;
+    padding-top: 28px;
+    padding-right: 30px;
+    padding-bottom: 42px;
+    padding-left: 30px;
+  }
+
+  .gallery-list__title {
+    padding-bottom: 31px;
+    font-size: 30px;
+  }
+
+  .gallery-list__description br:nth-child(1),
+  .gallery-list__description br:nth-child(3) {
+    display: none;
+  }
+
+  .gallery-list__description br:nth-child(2) {
+    display: inline;
+  }
+
+  .gallery-list__item {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    text-align: start;
+  }
+
+  .gallery-list__photo {
+    height: 400px;
+    margin: 0;
+  }
+
+  .gallery-list__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+  }
+
+  .gallery-list__wrapper--gray {
+    background-color: #f2f2f2;
+  }
+
+  .gallery-list__item-author {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery-list {
+    padding: 0;
+    text-align: center;
+  }
 }
