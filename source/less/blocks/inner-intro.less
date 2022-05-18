@@ -1,0 +1,36 @@
+// @import "./blocks/inner-intro.less";
+
+.inner-intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 157px;
+  margin-bottom: 34px;
+  color: #ffffff;
+  background-image: url("/img/intro-triangle.svg"), url("/img/bg-inner-intro-mobile.png");
+  background-color: #a7afc6;
+  background-position: bottom, 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 57px, cover;
+}
+
+.inner-intro__name {
+  padding-bottom: 5%;
+}
+
+@media (min-width: @tablet-width) {
+  .inner-intro {
+    height: 289px;
+    background-image: url("/img/intro-triangle.svg"), url("/img/bg-inner-intro-tablet.png");
+  }
+
+  .inner-intro__name {
+    width: 457px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .inner-intro {
+    background-image: url("/img/intro-triangle.svg"), url("/img/bg-inner-intro-desktop.png");
+  }
+}

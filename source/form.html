@@ -51,8 +51,8 @@
 
         <h1 class="visually-hidden">Форма отзыва о городе Седона</h1>
 
-        <div class="catalog-intro">
-          <img class="catalog-intro__name" src="../img/text-sedona.svg" alt="надпись Седона">
+        <div class="inner-intro">
+          <img class="inner-intro__name" src="../img/text-sedona.svg" alt="надпись Седона">
         </div>
 
         <section class="review">
@@ -90,10 +90,10 @@
               </div>
             </div>
 
-            <div class="testimonials-filters__group visitor">
+            <div class="testimonials-filters__group opinion">
               <label class="testimonials-filters__title">Ваше общее впечатление:</label>
               <label class="radio-button__label">
-                <input class="radio-button__input" type="radio" name="opinion" value="positive" tabindex="1">
+                <input class="radio-button__input" type="radio" name="opinion" value="positive" tabindex="1" checked>
                 <span class="radio-button__mark"></span>
                 <span class="radio-button__text">Скорее положительное</span>
               </label>
@@ -109,7 +109,34 @@
               </label>
             </div>
 
+            <div class="testimonials-filters__group landmark">
+              <label class="testimonials-filters__title">Посещенные достопримечательности:</label>
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="landmark" value="1" checked>
+                <span class="checkbox__text">Мост Дьявола</span>
+              </label>
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="landmark" value="2" checked>
+                <span class="checkbox__text">Гора-Колокол</span>
+              </label>
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="landmark" value="3" checked>
+                <span class="checkbox__text">Слайд-парк</span>
+              </label>
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="landmark" value="4">
+                <span class="checkbox__text">Красные скалы</span>
+              </label>
+            </div>
+
+            <div class="testimonials-filters__group description">
+              <label class="testimonials-filters__title" for="description">Опишите свои эмоции:</label>
+              <textarea class="textarea__text" name="description" id="description" cols="30" rows="5">Опишите подробно все свои восторги</textarea>
+            </div>
           </div>
+
+          <button class="button" type="submit">Отправить отзыв</button>
+          <span class="marked"><sup>*</sup> — обязательные поля</span>
         </form>
       </main>
 
