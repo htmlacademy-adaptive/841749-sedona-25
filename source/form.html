@@ -64,8 +64,7 @@
           <section class="testimonials-section">
             <h2 class="visually-hidden">Форма отзыва</h2>
             <form class="testimonials-form" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="testimonials-form__wrapper">
-                <div class="testimonials-filters">
+              <div class="testimonials-filters testimonials-filters-grid">
                   <div class="testimonials-filters__group visitor">
                     <label class="testimonials-filters__title">Представьтесь:</label>
                     <div class="field">
@@ -143,11 +142,12 @@
                       <textarea class="textarea__text" name="description" id="description" cols="30" rows="5">Опишите подробно все свои восторги</textarea>
                     </div>
                   </div>
-                </div>
 
-                <button class="button" type="submit">Отправить отзыв</button>
-                <span class="marked"><sup>*</sup> — обязательные поля</span>
-              </div>
+                  <div class="testimonials-filters__group form-button">
+                    <button class="testimonials-filters__button" type="submit">Отправить отзыв</button>
+                    <span class="marked"><sup>*</sup> — обязательные поля</span>
+                  </div>
+                </div>
             </form>
           </section>
         </div>
