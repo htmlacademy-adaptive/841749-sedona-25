@@ -55,97 +55,99 @@
           <img class="inner-intro__name" src="../img/text-sedona.svg" alt="надпись Седона">
         </div>
 
-        <div class="main-form__wrapper">
+        <div class="main-form__wrapper main-form__wrapper--flex">
           <section class="review">
             <h2 class="review__title">Оставьте свой отзыв</h2>
-            <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            <p class="review__description">Помогите нашим отелям стать лучше!<br> Оставьте отзыв о них,<br> а также о<br> посещенных вами<br> достопримечательностях</p>
           </section>
 
           <section class="testimonials-section">
             <h2 class="visually-hidden">Форма отзыва</h2>
             <form class="testimonials-form" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="testimonials-filters">
-                <div class="testimonials-filters__group visitor">
-                  <label class="testimonials-filters__title">Представьтесь:</label>
-                  <div class="field">
-                    <label class="field__name" for="name">Имя<sup>*</sup>:</label>
-                    <input class="field__input" type="text" id="name" name="name" placeholder="Пётр">
+              <div class="testimonials-form__wrapper">
+                <div class="testimonials-filters">
+                  <div class="testimonials-filters__group visitor">
+                    <label class="testimonials-filters__title">Представьтесь:</label>
+                    <div class="field">
+                      <label class="field__name" for="name">Имя<sup>*</sup>:</label>
+                      <input class="field__input" type="text" id="name" name="name" placeholder="Пётр">
+                    </div>
+                    <div class="field">
+                      <label class="field__name" for="surname">Фамилия<sup>*</sup>:</label>
+                      <input class="field__input" type="text" id="surname" name="surname" placeholder="Пустота">
+                    </div>
+                    <div class="field">
+                      <label class="field__name" for="patronymic">Отчество:</label>
+                      <input class="field__input" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
+                    </div>
                   </div>
-                  <div class="field">
-                    <label class="field__name" for="surname">Фамилия<sup>*</sup>:</label>
-                    <input class="field__input" type="text" id="surname" name="surname" placeholder="Пустота">
+
+                  <div class="testimonials-filters__group contact">
+                    <label class="testimonials-filters__title">Контактная информация:</label>
+                    <div class="field-contact">
+                      <label class="field-contact__name" for="phone">Контактный телефон<sup>*</sup>:</label>
+                      <input class="field-contact__input" type="tel" id="phone" name="phone" placeholder="Введите телефон">
+                    </div>
+                    <div class="field-contact">
+                      <label class="field-contact__name" for="email">Электронная почта<sup>*</sup>:</label>
+                      <input class="field-contact__input" type="email" id="email" name="email" placeholder="Введите e-mail">
+                    </div>
                   </div>
-                  <div class="field">
-                    <label class="field__name" for="patronymic">Отчество:</label>
-                    <input class="field__input" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
+
+                  <div class="testimonials-filters__group opinion">
+                    <label class="testimonials-filters__title">Ваше общее впечатление:</label>
+                    <div class="radio-button">
+                      <label class="radio-button__label">
+                        <input class="radio-button__input" type="radio" name="opinion" value="positive" tabindex="1" checked>
+                        <span class="radio-button__mark"></span>
+                        <span class="radio-button__text">Скорее положительное</span>
+                      </label>
+                      <label class="radio-button__label">
+                        <input class="radio-button__input" type="radio" name="opinion" value="negative" tabindex="2">
+                        <span class="radio-button__mark"></span>
+                        <span class="radio-button__text">Скорее отрицательное</span>
+                      </label>
+                      <label class="radio-button__label">
+                        <input class="radio-button__input" type="radio" name="opinion" value="abstain" tabindex="3">
+                        <span class="radio-button__mark"></span>
+                        <span class="radio-button__text">Затрудняюсь ответить</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="testimonials-filters__group landmark">
+                    <label class="testimonials-filters__title">Посещенные достопримечательности:</label>
+                    <div class="checkbox">
+                      <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" name="landmark" value="1" checked>
+                        <span class="checkbox__text">Мост Дьявола</span>
+                      </label>
+                      <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" name="landmark" value="2" checked>
+                        <span class="checkbox__text">Гора-Колокол</span>
+                      </label>
+                      <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" name="landmark" value="3" checked>
+                        <span class="checkbox__text">Слайд-парк</span>
+                      </label>
+                      <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" name="landmark" value="4">
+                        <span class="checkbox__text">Красные скалы</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="testimonials-filters__group description">
+                    <label class="testimonials-filters__title" for="description">Опишите свои эмоции:</label>
+                    <div class="textarea">
+                      <textarea class="textarea__text" name="description" id="description" cols="30" rows="5">Опишите подробно все свои восторги</textarea>
+                    </div>
                   </div>
                 </div>
 
-                <div class="testimonials-filters__group contact">
-                  <label class="testimonials-filters__title">Контактная информация:</label>
-                  <div class="field-contact">
-                    <label class="field-contact__name" for="phone">Контактный телефон<sup>*</sup>:</label>
-                    <input class="field-contact__input" type="tel" id="phone" name="phone" placeholder="Введите телефон">
-                  </div>
-                  <div class="field-contact">
-                    <label class="field-contact__name" for="email">Электронная почта<sup>*</sup>:</label>
-                    <input class="field-contact__input" type="email" id="email" name="email" placeholder="Введите e-mail">
-                  </div>
-                </div>
-
-                <div class="testimonials-filters__group opinion">
-                  <label class="testimonials-filters__title">Ваше общее впечатление:</label>
-                  <div class="radio-button">
-                    <label class="radio-button__label">
-                      <input class="radio-button__input" type="radio" name="opinion" value="positive" tabindex="1" checked>
-                      <span class="radio-button__mark"></span>
-                      <span class="radio-button__text">Скорее положительное</span>
-                    </label>
-                    <label class="radio-button__label">
-                      <input class="radio-button__input" type="radio" name="opinion" value="negative" tabindex="2">
-                      <span class="radio-button__mark"></span>
-                      <span class="radio-button__text">Скорее отрицательное</span>
-                    </label>
-                    <label class="radio-button__label">
-                      <input class="radio-button__input" type="radio" name="opinion" value="abstain" tabindex="3">
-                      <span class="radio-button__mark"></span>
-                      <span class="radio-button__text">Затрудняюсь ответить</span>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="testimonials-filters__group landmark">
-                  <label class="testimonials-filters__title">Посещенные достопримечательности:</label>
-                  <div class="checkbox">
-                    <label class="checkbox__label">
-                      <input class="checkbox__input" type="checkbox" name="landmark" value="1" checked>
-                      <span class="checkbox__text">Мост Дьявола</span>
-                    </label>
-                    <label class="checkbox__label">
-                      <input class="checkbox__input" type="checkbox" name="landmark" value="2" checked>
-                      <span class="checkbox__text">Гора-Колокол</span>
-                    </label>
-                    <label class="checkbox__label">
-                      <input class="checkbox__input" type="checkbox" name="landmark" value="3" checked>
-                      <span class="checkbox__text">Слайд-парк</span>
-                    </label>
-                    <label class="checkbox__label">
-                      <input class="checkbox__input" type="checkbox" name="landmark" value="4">
-                      <span class="checkbox__text">Красные скалы</span>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="testimonials-filters__group description">
-                  <label class="testimonials-filters__title" for="description">Опишите свои эмоции:</label>
-                  <div class="textarea">
-                    <textarea class="textarea__text" name="description" id="description" cols="30" rows="5">Опишите подробно все свои восторги</textarea>
-                  </div>
-                </div>
+                <button class="button" type="submit">Отправить отзыв</button>
+                <span class="marked"><sup>*</sup> — обязательные поля</span>
               </div>
-
-              <button class="button" type="submit">Отправить отзыв</button>
-              <span class="marked"><sup>*</sup> — обязательные поля</span>
             </form>
           </section>
         </div>

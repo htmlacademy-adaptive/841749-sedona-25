@@ -1,0 +1,66 @@
+// @import "./blocks/review.less";
+
+.review {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.review__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 3px;
+  padding-bottom: 22px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.review__description {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: @dark;
+}
+
+.review__description br:nth-child(2) {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .review {
+    padding: 29px;
+  }
+
+  .review__title {
+    padding-bottom: 17px;
+    font-size: 30px;
+  }
+
+  .review__description {
+    line-height: 24px;
+  }
+
+  .review__description br {
+    display: none;
+  }
+
+  .review__description br:nth-child(2) {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review {
+    padding: 40px;
+  }
+
+  .review__title {
+    padding-bottom: 29px;
+  }
+}
