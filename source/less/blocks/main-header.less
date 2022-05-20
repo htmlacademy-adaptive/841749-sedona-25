@@ -1,4 +1,5 @@
 .main-header {
+  position: relative;
   z-index: 11;
   min-height: 56px;
   outline: 3px solid rgba(34, 176, 117, 0.8);
@@ -7,33 +8,19 @@
 
 .main-header__wrapper {
   min-height: 56px;
-  padding-right: 18px;
-  padding-left: 18px;
-  outline: 3px solid #4e205bcc;
-  outline-offset: -3px;
 }
 
 .main-header__logo {
-  position: relative;
   display: block;
   width: 185px;
   margin: 0 auto;
   margin-bottom: -45px;
-  // position: absolute;
-  // top: 0;
-  // right: 50%;
-  // display: block;
-  // height: 96px;
-  // transform: translate(50%);
-  // outline: 3px solid #de9898cc;
-  // outline-offset: -3px;
-  // пока не уверен верно
 }
 
 .main-nav {
   position: absolute;
   top: 0;
-  right: 15px;
+  min-width: 100%;
 }
 
 @media (min-width: @tablet-width) {
@@ -43,9 +30,5 @@
 
   .main-header__wrapper {
     padding: 0;
-  }
-
-  .main-nav {
-    position: relative;
   }
 }
