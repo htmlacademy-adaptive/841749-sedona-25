@@ -33,6 +33,13 @@
   box-shadow: 0 9px 0 0 @blue, 0 18px 0 0 @blue;
 }
 
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: fade(@blue, 60%);
+  box-shadow:
+    0 9px 0 0 fade(@blue, 60%),
+    0 18px 0 0 fade(@blue, 60%);
+}
+
 .main-nav--closed .main-nav__toggle:active::before {
   background-color: fade(@blue, 30%);
   box-shadow:
@@ -89,6 +96,11 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: fade(@white, 60%);
   }
 
   &:active::before,

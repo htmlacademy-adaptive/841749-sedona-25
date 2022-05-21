@@ -41,21 +41,33 @@
 }
 
 .advantages-list__item-subject {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
   margin: 0;
-  padding-top: 30px;
   padding-bottom: 11px;
+}
+
+.advantages-list__item-subject--first {
+  padding-top: 30px;
+}
+
+.advantages-list__item-subject br {
+  display: none;
 }
 
 .advantages-list__numbering {
   margin: 0;
   padding-bottom: 17px;
-  // font-weight: 700;
 }
 
 .advantages-list__description-excerpt {
   margin: 0;
   padding-bottom: 13px;
-  // font-weight: 700;
+}
+
+.advantages-list__description-excerpt br:not(:nth-child(2)) {
+  display: none;
 }
 
 .advantages-list__item-picture {
@@ -126,8 +138,11 @@
 
 @media (min-width: @tablet-width) {
   .advantages-list__header {
+    margin-bottom: 39px;
     padding-top: 47px;
+    padding-right: 120px;
     padding-bottom: 17px;
+    padding-left: 120px;
     text-align: center;
   }
 
@@ -152,20 +167,62 @@
   }
 
   .advantages-list__item--first {
-    min-width: 256px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .advantages-list__item--blue {
+    flex-grow: 1;
+  }
+
+  .advantages-list__item-picture {
+    flex-grow: 3;
   }
 
   .advantages-list__item-picture--first {
     height: 256px;
+    min-width: 512px;
     background-image: url("/img/bg-item-picture-city-tablet.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
+  .advantages-list__item-subject {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  .advantages-list__numbering {
+    padding-bottom: 24px;
+  }
+
+  .advantages-list__item-subject--first {
+    padding-top: 0;
+  }
+
+  .advantages-list__item-subject br {
+    display: inline;
+  }
+
+  .advantages-list__description-excerpt br:nth-child(2) {
+    display: none;
+  }
+
+  .advantages-list__description-excerpt br:not(:nth-child(2)) {
+    display: inline;
+  }
+
   .advantages-list__subject {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 10%;
+  }
+
+  .advantages-list__subject-item {
+    padding-left: 0;
+    text-align: center;
   }
 
   .advantages-list__wrapper-block--reverse {
@@ -175,6 +232,7 @@
 
   .advantages-list__item-picture--second {
     height: 256px;
+    min-width: 512px;
     background-image: url("/img/bg-item-picture-bridge-tablet.jpg");
     background-size: cover;
   }
@@ -185,12 +243,26 @@
 }
 
 @media (min-width: @desktop-width) {
+  .advantages-list__header {
+    margin-bottom: 29px;
+    padding-top: 60px;
+  }
+
+  .advantages-list__description-excerpt br:not(:nth-child(2)) {
+    display: none;
+  }
+
+  .advantages-list__description-excerpt br:nth-child(2) {
+    display: inline;
+  }
+
   .advantages-list__item-picture--first {
     min-width: 800px;
     background-image: url("/img/bg-item-picture-city-desktop.jpg");
   }
 
   .advantages-list__item-picture--second {
+    min-width: 800px;
     background-image: url("/img/bg-item-picture-bridge-desktop.jpg");
     background-size: cover;
   }

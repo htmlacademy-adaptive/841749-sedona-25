@@ -15,6 +15,15 @@
   text-decoration: none;
   border-top: 1px solid fade(#ffffff, 20%);
   border-bottom: 1px solid fade(#010101, 20%);
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    background-color: #5496bd;
+  }
 }
 
 .site-list__logo {
@@ -44,6 +53,19 @@
     line-height: 21px;
     color: @black;
     border: none;
+
+    &:hover {
+      background-color: @white;
+    }
+
+    &:active {
+      color: @black;
+      background-color: @white;
+    }
+  }
+
+  .site-list__item--current a {
+    color: #766357;
   }
 
   .site-list__logo {
