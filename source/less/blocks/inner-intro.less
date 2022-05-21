@@ -1,0 +1,45 @@
+// @import "./blocks/inner-intro.less";
+
+.inner-intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 157px;
+  margin-bottom: 34px;
+  color: #ffffff;
+  background-image: url("/img/intro-triangle.svg"), url("/img/bg-inner-intro-mobile.png");
+  background-color: #a7afc6;
+  background-position: bottom, 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 57px, cover;
+}
+
+.inner-intro__name {
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 3%;
+}
+
+@media (min-width: @tablet-width) {
+  .inner-intro {
+    height: 290px;
+    background-image: url("/img/intro-triangle.svg"), url("/img/bg-inner-intro-tablet.png");
+  }
+
+  .inner-intro__name {
+    width: 457px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .inner-intro {
+    height: 300px;
+    margin-bottom: 72px;
+    background-image: url("/img/intro-triangle.svg"), url("/img/bg-inner-intro-desktop.png");
+  }
+
+  .inner-intro__name {
+    width: 460px;
+    padding-bottom: 2%;
+  }
+}

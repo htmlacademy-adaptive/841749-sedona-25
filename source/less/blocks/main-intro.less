@@ -2,11 +2,11 @@
   // видны в блоки рамки
   height: 389px;
   color: #ffffff;
-  background-image: url("/img/intro-triangle-mobile.svg"), url("/img/bg-intro-mobile.png");
+  background-image: url("/img/intro-triangle.svg"), url("/img/bg-intro-mobile.png");
   background-color: #a7afc6;
   background-position: bottom, center;
   background-repeat: no-repeat;
-  background-size: contain, cover;
+  background-size: 100% 57px, cover;
 }
 
 .main-intro__wrapper {
@@ -26,17 +26,18 @@
 @media (min-width: @tablet-width) {
   .main-intro {
     height: 518px;
-    background-image: url("/img/intro-triangle-tablet.svg"), url("/img/bg-intro-tablet.png");
+    background-image: url("/img/intro-triangle.svg"), url("/img/bg-intro-tablet.png");
   }
 
   .main-intro__name {
     width: 461px;
+    height: auto;
     padding-top: 77px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-intro {
-    background-image: url("/img/intro-triangle-desktop.svg"), url("/img/bg-intro-desktop.png");
+    background-image: url("/img/intro-triangle.svg"), url("/img/bg-intro-desktop.png");
   }
 }

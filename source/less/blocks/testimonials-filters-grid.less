@@ -1,0 +1,53 @@
+// @import "./blocks/testimonials-filters.less";
+
+.testimonials-filters {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .testimonials-filters {
+    display: grid;
+    grid-template-areas: "visitor contact"
+                         "opinion opinion"
+                         "landmark landmark"
+                         "description description"
+                         "form-button form-button";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 338px 162px 189px 214px 58px;
+    column-gap: 10%;
+    row-gap: 48px;
+  }
+
+  .visitor {
+    grid-area: visitor;
+  }
+
+  .contact {
+    grid-area: contact;
+  }
+
+  .opinion {
+    grid-area: opinion;
+  }
+
+  .landmark {
+    grid-area: landmark;
+  }
+
+  .description {
+    grid-area: description;
+  }
+
+  .form-button {
+    grid-area: form-button;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .testimonials-filters {
+    grid-template-rows: 338px 134px 189px 214px 58px;
+  }
+}
