@@ -35,6 +35,7 @@
 
 .social__item {
   padding-right: 5px;
+  list-style-type: none;
 
   &:last-child {
     padding-right: 0;
@@ -42,13 +43,19 @@
 }
 
 .social__link {
-  display: inline-block;
+  display: block;
   width: 48px;
   height: 48px;
   background-color: #81b3d2;
+  fill: @white;
 
-  svg {
-    fill: #ffffff;
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    fill: fade(@white, 30%);
+    background-color: #5496bd;
   }
 }
 
@@ -68,6 +75,23 @@
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  color: @black;
+
+  &:hover {
+    color: #669ec0;
+  }
+
+  &:hover path {
+    fill: #669ec0;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
+  &:active path {
+    fill: #b3b3b3;
+  }
 }
 
 @media (min-width: @tablet-width) {
