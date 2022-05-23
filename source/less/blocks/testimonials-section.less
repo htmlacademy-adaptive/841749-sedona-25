@@ -1,4 +1,4 @@
-// @import "./blocks/testimonials-filters.less";
+// @import "./blocks/testimonials-section.less";
 
 .testimonials-filters__group {
   width: 100%;
@@ -164,15 +164,21 @@
 
 .checkbox__label {
   position: relative;
-  padding-top: 14px;
-  padding-bottom: 22px;
+  margin: 8px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 62px;
+  line-height: 26px;
+
+  &:first-child {
+    margin-top: 3px;
+  }
 }
 
 .checkbox__text::before {
   content: "";
   position: absolute;
-  top: 3px;
+  top: -2px;
   left: 0;
   width: 46px;
   height: 46px;
@@ -183,7 +189,7 @@
 .checkbox__input:checked + .checkbox__text::after {
   content: "";
   position: absolute;
-  top: 16px;
+  top: 10px;
   left: 13px;
   width: 16px;
   height: 10px;
@@ -192,15 +198,15 @@
   transform: rotate(-50deg);
 }
 
-.checkbox__label:last-child {
-  padding-bottom: 6px;
-}
-
 .checkbox__text {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: none;
+}
+
+.description {
+  padding-top: 12px;
 }
 
 .textarea {
@@ -259,11 +265,73 @@
 }
 
 @media (min-width: @tablet-width) {
+  .testimonials-section {
+    margin-bottom: 79px;
+  }
+
+  .testimonials-filters__group {
+    margin-bottom: 4px;
+  }
+
   .testimonials-filters__title {
+    padding-bottom: 22px;
     font-size: 21px;
+  }
+
+  .field-contact {
+    padding-bottom: 13px;
+  }
+
+  .field__input,
+  .field-contact__input {
+    width: 80%;
+  }
+
+  .field-contact__name {
+    align-self: flex-start;
+    padding-left: 18%;
+  }
+
+  .field-contact__input {
+    align-self: flex-end;
+  }
+
+  .checkbox__label:first-child {
+    margin-top: 8px;
+  }
+
+  .checkbox__label:nth-child(3n+3),
+  .checkbox__label:nth-child(4n+4) {
+    margin-bottom: 0;
+  }
+
+  .textarea__text {
+    min-height: 128px;
   }
 }
 
-// @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .review {
+    margin-bottom: 27px;
+  }
 
-// }
+  .testimonials-filters__group {
+    margin-bottom: 8px;
+  }
+
+  .field__input {
+    width: 85%;
+  }
+
+  .opinion .testimonials-filters__title {
+    margin-bottom: 21px;
+  }
+
+  .landmark .testimonials-filters__title {
+    margin-bottom: 29px;
+  }
+
+  .description .testimonials-filters__title {
+    margin-bottom: 5px;
+  }
+}
