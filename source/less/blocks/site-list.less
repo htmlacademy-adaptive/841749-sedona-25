@@ -34,7 +34,7 @@
   .site-list {
     display: grid;
     min-height: 56px;
-    grid-template-columns: 1fr 1fr 185px 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     margin: 0 auto;
   }
 
@@ -55,11 +55,12 @@
     border: none;
 
     &:hover {
+      color: @blue;
       background-color: transparent;
     }
 
     &:active {
-      color: @black;
+      color: fade(@black, 30%);
       background-color: transparent;
     }
   }
@@ -71,7 +72,6 @@
   .site-list__logo {
     display: block;
     margin-top: 0;
-    margin-right: -10px;
     margin-bottom: -50px;
   }
 
@@ -82,6 +82,13 @@
 }
 
 @media (min-width: @desktop-width) {
+  .site-list {
+    display: grid;
+    min-height: 56px;
+    grid-template-columns: repeat(5, 240px);
+    margin: 0 auto;
+  }
+
   .site-list__logo {
     margin-right: auto;
     margin-left: auto;

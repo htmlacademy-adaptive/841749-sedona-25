@@ -307,6 +307,27 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    background-color: #5496bd;
+  }
+}
+
+.testimonials-filters__button--disabled {
+  background-color: #e5e5e5;
+  cursor: not-allowed;
+
+  &:hover,
+  &:active {
+    color: @white;
+    background-color: #e5e5e5;
+  }
 }
 
 .testimonials-filters__marked {

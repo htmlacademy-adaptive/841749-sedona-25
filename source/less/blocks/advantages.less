@@ -129,8 +129,20 @@
 }
 
 .advantages-list__item--gray {
+  position: relative;
   background-color: #eeeeee;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 6%;
+    width: 89%;
+    height: 1px;
+    background-color: #d6d6d6;
+  }
 }
+
 
 .advantages-list__item--third {
   padding-top: 26px;
