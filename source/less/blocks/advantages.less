@@ -36,7 +36,7 @@
 }
 
 .advantages-list__item--triangle {
-  background-image: url("/img/top-triangle.svg");
+  background-image: url("../img/top-triangle.svg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100% 37px;
@@ -79,7 +79,7 @@
 
 .advantages-list__item-picture--first {
   background-color: #9ba896;
-  background-image: url("/img/bg-item-picture-city@1x.jpg");
+  background-image: url("../img/bg-item-picture-city@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -124,13 +124,25 @@
 
 .advantages-list__item-picture--second {
   background-color: #d4af9c;
-  background-image: url("/img/bg-item-picture-bridge@1x.jpg");
+  background-image: url("../img/bg-item-picture-bridge@1x.jpg");
   background-size: cover;
 }
 
 .advantages-list__item--gray {
+  position: relative;
   background-color: #eeeeee;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 6%;
+    width: 89%;
+    height: 1px;
+    background-color: #d6d6d6;
+  }
 }
+
 
 .advantages-list__item--third {
   padding-top: 26px;
@@ -201,7 +213,7 @@
   .advantages-list__item-picture--first {
     height: 256px;
     min-width: 512px;
-    background-image: url("/img/bg-item-picture-city-tablet.jpg");
+    background-image: url("../img/bg-item-picture-city-tablet.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -267,7 +279,7 @@
   .advantages-list__item-picture--second {
     height: 256px;
     min-width: 512px;
-    background-image: url("/img/bg-item-picture-bridge-tablet.jpg");
+    background-image: url("../img/bg-item-picture-bridge-tablet.jpg");
     background-size: cover;
   }
 
@@ -303,7 +315,7 @@
 
   .advantages-list__item-picture--first {
     min-width: 800px;
-    background-image: url("/img/bg-item-picture-city-desktop.jpg");
+    background-image: url("../img/bg-item-picture-city-desktop.jpg");
   }
 
   .advantages-list__subject {
@@ -314,7 +326,7 @@
 
   .advantages-list__item-picture--second {
     min-width: 800px;
-    background-image: url("/img/bg-item-picture-bridge-desktop.jpg");
+    background-image: url("../img/bg-item-picture-bridge-desktop.jpg");
     background-size: cover;
   }
 }
