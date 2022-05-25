@@ -8,6 +8,13 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 
+import terser from 'gulp-terser';
+import squoosh from 'gulp-libsquoosh';
+import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
+import del from 'del';
+
+
 // Styles
 
 export const styles = () => {
@@ -19,7 +26,7 @@ export const styles = () => {
       csso() // style.css[prefix] -> style.css[prefix, min]
     ]))
     .pipe(rename ('style.min.css'))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -28,7 +35,39 @@ export const styles = () => {
 export const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('source'));
+    .pipe(gulp.dest('build'));
+}
+
+// Scripts
+
+export const scripts = () => {
+  return gulp.src('source/js/*.js')
+    .pipe(terser())
+    .pipe(gulp.dest('build/js'));
+}
+
+// Images
+
+export const optimizeImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+  .pipe(squoosh())
+  .pipe(gulp.dest('build/img'));
+}
+
+const copyImages = () => {
+  return gulp.src('source/img/favicons/**/*.{jpg,png}')
+  .pipe(squoosh())
+  .pipe(gulp.dest('build/img'));
+}
+
+// WebP
+
+export const createWebp = () => {
+  return gulp.src('source/img/favicons/**/*.{jpg,png}')
+    .pipe(squoosh({
+      webp: {}
+    }))
+    .pipe(gulp.dest(''))
 }
 
 // Server
@@ -36,7 +75,7 @@ export const html = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -54,5 +93,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  styles, server, watcher
+  html, styles, scripts, images, server, watcher,
 );
