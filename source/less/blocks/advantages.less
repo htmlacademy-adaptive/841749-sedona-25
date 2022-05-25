@@ -80,10 +80,15 @@
 
 .advantages-list__item-picture--first {
   background-color: #9ba896;
-  background-image: url("../img/bg-item-picture-city@1x.jpg");
+  background-image: url("../img/bg-item-picture-city-mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-item-picture-city-mobile@2x.jpg");
+    background-size: 640px auto;
+  }
 }
 
 .advantages-list__subject {
@@ -125,8 +130,13 @@
 
 .advantages-list__item-picture--second {
   background-color: #d4af9c;
-  background-image: url("../img/bg-item-picture-bridge@1x.jpg");
+  background-image: url("../img/bg-item-picture-bridge-mobile.jpg");
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-item-picture-bridge-mobile@2x.jpg");
+    background-size: 640px auto;
+  }
 }
 
 .advantages-list__item--gray {
@@ -218,6 +228,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-item-picture-city-tablet@2x.jpg");
+      background-size: 10240px auto;
+    }
   }
 
   .advantages-list__item-subject {
@@ -282,6 +297,11 @@
     min-width: 512px;
     background-image: url("../img/bg-item-picture-bridge-tablet.jpg");
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-item-picture-bridge-tablet@2x.jpg");
+      background-size: 1024px auto;
+    }
   }
 
   .advantages-list__wrapper-block__grid {
@@ -317,6 +337,11 @@
   .advantages-list__item-picture--first {
     min-width: 800px;
     background-image: url("../img/bg-item-picture-city-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-item-picture-city-desktop@2x.jpg");
+      background-size: 1600px auto;
+    }
   }
 
   .advantages-list__subject {
@@ -329,5 +354,10 @@
     min-width: 800px;
     background-image: url("../img/bg-item-picture-bridge-desktop.jpg");
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-item-picture-bridge-desktop@2x.jpg");
+      background-size: 1600px auto;
+    }
   }
 }
