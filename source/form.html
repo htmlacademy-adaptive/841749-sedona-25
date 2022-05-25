@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <div class="page-body__wrapper">
       <header class="main-header">
         <div class="main-header__wrapper">
           <a class="main-header__logo" href="index.html" aria-label="Sedona">
-            <img class="main-header__logo-image" src="img/logotype-phone.svg" width="185" height="96" alt="Город Седона">
+            <img class="main-header__logo-image" src="img/logotype.svg" width="185" height="96" alt="Город Седона">
           </a>
           <nav class="main-nav main-nav--opened main-nav--nojs">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -29,7 +29,7 @@
                 </li>
                 <li class="site-list__item site-list__logo">
                   <a class="site-list__link" href="index.html" aria-label="Sedona">
-                    <img class="main-header__logo-image" src="img/logotype-phone.svg" width="185" height="96" alt="Город Седона">
+                    <img class="main-header__logo-image" src="img/logotype.svg" width="185" height="96" alt="Город Седона">
                   </a>
                 </li>
                 <li class="site-list__item site-list__item--current">
@@ -52,7 +52,11 @@
         <h1 class="visually-hidden">Форма отзыва о городе Седона</h1>
 
         <div class="inner-intro">
-          <img class="inner-intro__name" src="./img/text-sedona.svg" alt="надпись Седона">
+          <picture>
+            <source media="(min-width:1200px)" srcset="./img/text-sedona-desktop.svg">
+            <source media="(min-width:768px)" srcset="./img/text-sedona-tablet.svg">
+            <img class="inner-intro__name" src="./img/text-sedona-mobile.svg" width="229" height="39" alt="надпись Седона">
+          </picture>
         </div>
 
         <div class="main-form__wrapper main-form__wrapper--flex">
@@ -197,6 +201,23 @@
           </div>
         </div>
       </footer>
+    </div>
+
+    <div class="modal-failure modal-failure--container">
+      <section class="modal-failure__section">
+        <h3 class="visually-hidden">Форма не сработала</h3>
+        <p class="modal-failure__text">Что-то пошло не так!</p>
+        <p class="modal-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="button modal-failure__button" type="button">Ok</button>
+      </section>
+    </div>
+
+    <div class="modal-success modal-success--container">
+      <section class="modal-success__section">
+        <h3 class="modal-success__header">Ваш отзыв отправлен!</h3>
+        <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <button class="button modal-success__buton">Закрыть окно</button>
+      </section>
     </div>
 
     <script src="./js/script.js"></script>

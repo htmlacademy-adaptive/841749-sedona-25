@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
@@ -28,7 +28,7 @@
       <header class="main-header">
         <div class="main-header__wrapper">
           <a class="main-header__logo" href="index.html" aria-label="Sedona">
-            <img class="main-header__logo-image" src="./img/logotype-phone.svg" width="185" height="96" alt="Город Седона">
+            <img class="main-header__logo-image" src="./img/logotype.svg" width="185" height="96" alt="Город Седона">
           </a>
           <nav class="main-nav main-nav--opened main-nav--nojs">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -46,7 +46,7 @@
                 </li>
                 <li class="site-list__item site-list__logo">
                   <a class="site-list__link" href="index.html" aria-label="Sedona">
-                    <img class="main-header__logo-image" src="./img/logotype-phone.svg" width="185" height="96" alt="Город Седона">
+                    <img class="main-header__logo-image" src="./img/logotype.svg" width="185" height="96" alt="Город Седона">
                   </a>
                 </li>
                 <li class="site-list__item">
@@ -70,7 +70,11 @@
 
         <div class="main-intro">
           <div class="main-intro__wrapper">
-            <img class="main-intro__name" src="./img/text-index.svg" width="282" height="214" alt="надпись Приветствие Седона">
+            <picture>
+              <source media="(min-width:1200px)" srcset="./img/text-welcome-desktop.svg">
+              <source media="(min-width:768px)" srcset="./img/text-welcome-tablet.svg">
+              <img class="main-intro__name" src="./img/text-welcome-mobile.svg" width="282" height="214" alt="надпись Приветствие Седона">
+            </picture>
           </div>
         </div>
 

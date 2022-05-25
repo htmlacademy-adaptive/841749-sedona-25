@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <div class="page-body__wrapper">
       <header class="main-header">
         <div class="main-header__wrapper">
           <a class="main-header__logo" href="index.html" aria-label="Sedona">
-            <img class="main-header__logo-image" src="./img/logotype-phone.svg" width="185" height="96" alt="Город Седона">
+            <img class="main-header__logo-image" src="./img/logotype.svg" width="185" height="96" alt="Город Седона">
           </a>
           <nav class="main-nav main-nav--opened main-nav--nojs">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -29,7 +29,7 @@
                 </li>
                 <li class="site-list__item site-list__logo">
                   <a class="site-list__link" href="index.html" aria-label="Sedona">
-                    <img class="main-header__logo-image" src="./img/logotype-phone.svg" width="185" height="96" alt="Город Седона">
+                    <img class="main-header__logo-image" src="./img/logotype.svg" width="185" height="96" alt="Город Седона">
                   </a>
                 </li>
                 <li class="site-list__item">
@@ -52,7 +52,11 @@
         <h1 class="visually-hidden">Каталог фото и видео Седоны</h1>
 
         <div class="inner-intro">
-          <img class="inner-intro__name" src="./img/text-sedona.svg" width="229" height="29" alt="надпись Седона">
+          <picture>
+            <source media="(min-width:1200px)" srcset="./img/text-sedona-desktop.svg">
+            <source media="(min-width:768px)" srcset="./img/text-sedona-tablet.svg">
+            <img class="inner-intro__name" src="./img/text-sedona-mobile.svg" width="229" height="39" alt="надпись Седона">
+          </picture>
         </div>
 
         <section class="gallery-list">
@@ -62,9 +66,9 @@
           </div>
           <div class="gallery-list__item gallery-list__item--1">
             <picture class="gallery-list__photo">
-              <source media="(min-width: 1200px)" srcset="./img/photo-1-desktop.jpg">
-              <source media="(min-width: 768px)" srcset="./img/photo-1-tablet.jpg">
-              <img src="./img/photo-1-mobile@1x.jpg" alt="Фото дороги во время заката солнца на фоне гор">
+              <source media="(min-width: 1200px)" srcset="./img/photo-1-desktop.jpg 1x, ./img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/photo-1-tablet.jpg 1x, ./img/photo-1-tablet@2x.jpg 2x">
+              <img src="./img/photo-1-mobile.jpg" srcset="./img/photo-1-mobile@2x.jpg 2x" alt="Фото дороги во время заката солнца на фоне гор">
             </picture>
             <div class="gallery-list__wrapper gallery-list__wrapper--gray">
               <div class="gallery-list__wrapper-description">
@@ -85,9 +89,9 @@
           </div>
           <div class="gallery-list__item gallery-list__item--2">
             <picture class="gallery-list__photo">
-              <source media="(min-width: 1200px)" srcset="./img/photo-2-desktop.jpg">
-              <source media="(min-width: 768px)" srcset="./img/photo-2-tablet.jpg">
-              <img src="./img/photo-2-mobile@1x.jpg" alt="Фото цветущего кактуса на фоне гор">
+              <source media="(min-width: 1200px)" srcset="./img/photo-2-desktop.jpg 1x, ./img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/photo-2-tablet.jpg 1x, ./img/photo-2-tablet@2x.jpg 2x">
+              <img src="./img/photo-2-mobile.jpg" srcset="./img/photo-2-mobile@2x.jpg 2x" alt="Фото цветущего кактуса на фоне гор">
             </picture>
             <div class="gallery-list__wrapper gallery-list__wrapper--gray">
               <div class="gallery-list__wrapper-description">
@@ -108,9 +112,9 @@
           </div>
           <div class="gallery-list__item gallery-list__item--3">
             <picture class="gallery-list__photo">
-              <source media="(min-width: 1200px)" srcset="./img/photo-3-desktop.jpg">
-              <source media="(min-width: 768px)" srcset="./img/photo-3-tablet.jpg">
-              <img class="gallery-list__photo" src="./img/photo-3-mobile@1x.jpg" alt="Фото горного серпантина">
+              <source media="(min-width: 1200px)" srcset="./img/photo-3-desktop.jpg 1x, ./img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/photo-3-tablet.jpg 1x, ./img/photo-3-tablet@2x.jpg 2x">
+              <img class="gallery-list__photo" src="./img/photo-3-mobile.jpg" srcset="./img/photo-3-mobile@2x.jpg 2x" alt="Фото горного серпантина">
             </picture>
             <div class="gallery-list__wrapper gallery-list__wrapper--gray">
               <div class="gallery-list__wrapper-description">
@@ -131,9 +135,9 @@
           </div>
           <div class="gallery-list__item gallery-list__item--4">
             <picture class="gallery-list__photo">
-              <source media="(min-width: 1200px)" srcset="./img/photo-4-desktop.jpg">
-              <source media="(min-width: 768px)" srcset="./img/photo-4-tablet.jpg">
-              <img class="gallery-list__photo" src="./img/photo-4-mobile@1x.jpg" alt="Каньон">
+              <source media="(min-width: 1200px)" srcset="./img/photo-4-desktop.jpg 1x, ./img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/photo-4-tablet.jpg 1x, ./img/photo-4-tablet@2x.jpg 2x">
+              <img class="gallery-list__photo" src="./img/photo-4-mobile.jpg" srcset="./img/photo-4-mobile@2x.jpg 2x" alt="Каньон">
             </picture>
             <div class="gallery-list__wrapper gallery-list__wrapper--gray">
               <div class="gallery-list__wrapper-description">
@@ -159,10 +163,13 @@
           <div class="presentation__wrapper">
             <b class="presentation__text">Все еще сомневаетесь?</b>
             <p class="presentation__description">Смотрите видеопрезентацию и<br> скорее за билетами, пока они<br> не<br> подорожали в очередной раз!</p>
+            <div  class="presentation__container">
             <video class="presentation__video-image" width="280" height="177" poster="video-mobile@1x.png" title="Машины едущие по дороге ведущий на мост, вокруг горы">
               <source src="#" type="video/mp4">
               <source src="#" type="video/ogg">
             </video>
+            <div class="presentation__icon-play"></div>
+            </div>
           </div>
         </section>
       </main>

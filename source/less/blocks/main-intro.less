@@ -2,11 +2,16 @@
   // видны в блоки рамки
   height: 389px;
   color: #ffffff;
-  background-image: url("../img/intro-triangle.svg"), url("../img/bg-intro-mobile.png");
+  background-image: url("../img/intro-triangle.svg"), url("../img/bg-intro-mobile.jpg");
   background-color: #a7afc6;
   background-position: bottom, center;
   background-repeat: no-repeat;
   background-size: 100% 57px, cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-triangle.svg"), url("../img/bg-intro-mobile@2x.jpg");
+    // background-size: 100% 57px, 640px cover;
+  }
 }
 
 .main-intro__wrapper {
@@ -26,7 +31,12 @@
 @media (min-width: @tablet-width) {
   .main-intro {
     height: 518px;
-    background-image: url("../img/intro-triangle.svg"), url("../img/bg-intro-tablet.png");
+    background-image: url("../img/intro-triangle.svg"), url("../img/bg-intro-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-triangle.svg"), url("../img/bg-intro-tablet@2x.jpg");
+      // background-size: 100% 57px, 1536px auto;
+    }
   }
 
   .main-intro__name {
@@ -38,6 +48,11 @@
 
 @media (min-width: @desktop-width) {
   .main-intro {
-    background-image: url("../img/intro-triangle.svg"), url("../img/bg-intro-desktop.png");
+    background-image: url("../img/intro-triangle.svg"), url("../img/bg-intro-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-triangle.svg"), url("../img/bg-intro-desktop@2x.jpg");
+      // background-size: 100% 57px, 2400px auto;
+    }
   }
 }
