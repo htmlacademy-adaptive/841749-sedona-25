@@ -1,24 +1,57 @@
 // @import "./blocks/modal-failure.less";
 
 .modal-failure {
-  display: none;
-  position: relative;
-  bottom: 696px;
-  width: 320px;
-  min-height: 280px;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: fade(@black, 30%);
+}
+
+.modal-failure--close {
+  // display: none;
+}
+
+.modal-failure__section {
+  position: relative;
+  top: 42px;
+  display: flex;
+  flex-direction: column;
+  flex: wrap;
+  align-items: center;
+  width: 230px;
+  margin: auto;
+  padding: 45px;
+  padding-bottom: 25px;
   background-color: @white;
   filter: drop-shadow(0 7px 15px rgba(0, 1, 1, 0.15));
 }
 
-.modal-failure--container {
-  margin: auto;
-  padding: 45px;
-  padding-bottom: 35px;
+.modal-failure__text {
+  margin: 0;
+  padding-bottom: 24px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
-.modal-failure__section {
-  display: flex;
-  flex-direction: column;
-  flex: wrap;
+.modal-failure__description {
+  margin: 0;
+  padding-bottom: 28px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.modal-failure__button {
+  width: 180px;
+  margin-bottom: 10px;
+  padding-top: 19px;
+  padding-bottom: 14px;
+  font-weight: 400;
 }
