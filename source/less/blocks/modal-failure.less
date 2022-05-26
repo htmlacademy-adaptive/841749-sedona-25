@@ -36,6 +36,10 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+
+  br {
+    display: none;
+  }
 }
 
 .modal-failure__description {
@@ -46,6 +50,7 @@
   line-height: 21px;
   font-weight: 400;
   text-align: center;
+  color: #333333;
 }
 
 .modal-failure__button {
@@ -54,4 +59,54 @@
   padding-top: 19px;
   padding-bottom: 14px;
   font-weight: 400;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    background-color: #5496bd;
+  }
+}
+
+// стили для кнопки :disabled
+.testimonials-filters__button--disabled:disabled {
+  background-color: #e5e5e5;
+  cursor: not-allowed;
+
+  &:hover,
+  &:active {
+    color: @white;
+    background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .modal-failure__section {
+    width: 274px;
+    padding: 50px 63px;
+    padding-bottom: 34px;
+  }
+
+  .modal-failure__text {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    padding-bottom: 21px;
+
+    br {
+      display: inline;
+    }
+  }
+
+  .modal-failure__description {
+    padding-bottom: 47px;
+  }
+
+  .modal-failure__button {
+    width: 272px;
+    margin-bottom: 13px;
+    font-size: 21px;
+  }
 }

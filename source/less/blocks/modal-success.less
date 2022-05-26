@@ -11,7 +11,7 @@
 }
 
 .modal-success--close {
-  // display: none;
+  display: none;
 }
 
 .modal-success__section {
@@ -50,6 +50,7 @@
   line-height: 21px;
   font-weight: 400;
   text-align: center;
+  color: #333333;
 }
 
 .modal-success__button-wrapper {
@@ -60,4 +61,49 @@
   width: 280px;
   margin: 20px;
   font-weight: 400;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    background-color: #5496bd;
+  }
+}
+
+// стили для кнопки :disabled
+.testimonials-filters__button--disabled:disabled {
+  background-color: #e5e5e5;
+  cursor: not-allowed;
+
+  &:hover,
+  &:active {
+    color: @white;
+    background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .modal-success__section {
+    width: 640px;
+  }
+
+  .modal-success__text-wrapper {
+    padding: 54px 91px 0;
+  }
+
+  .modal-success__header {
+    padding-bottom: 28px;
+    font-size: 30px;
+  }
+
+  .modal-success__button {
+    width: 458px;
+    margin: 44px 91px;
+    padding-top: 19px;
+    padding-bottom: 14px;
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
