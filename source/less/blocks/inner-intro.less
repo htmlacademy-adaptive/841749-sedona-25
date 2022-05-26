@@ -7,37 +7,40 @@
   height: 157px;
   margin-bottom: 34px;
   color: #ffffff;
-  background-image: url("../img/intro-triangle.svg"), url("../img/bg-inner-intro-mobile.jpg");
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-inner-intro-mobile.jpg");
   background-color: #a7afc6;
   background-position: bottom, 50% 100%;
   background-repeat: no-repeat;
   background-size: 100% 57px, cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/intro-triangle.svg"), url("../img/bg-inner-intro-mobile@2x.jpg");
-    // background-size: 100% 57px, 640px cover;
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-inner-intro-mobile@2x.jpg");
+    background-size: 100% 57px, cover;
   }
 }
 
 .inner-intro__name {
+  display: block;
+  width: 229px;
   height: auto;
   margin: 0 auto;
-  padding-bottom: 3%;
+  padding-top: 22%;
 }
 
 @media (min-width: @tablet-width) {
   .inner-intro {
     height: 290px;
-    background-image: url("../img/intro-triangle.svg"), url("../img/bg-inner-intro-tablet.jpg");
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-inner-intro-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/intro-triangle.svg"), url("../img/bg-inner-intro-mobile@2x.jpg");
+      background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-inner-intro-mobile@2x.jpg");
       // background-size: 100% 57px, 1536px auto;
     }
   }
 
   .inner-intro__name {
     width: 457px;
+    padding-top: 21%;
   }
 }
 
@@ -45,16 +48,16 @@
   .inner-intro {
     height: 300px;
     margin-bottom: 72px;
-    background-image: url("../img/intro-triangle.svg"), url("../img/bg-inner-intro-desktop.jpg");
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-inner-intro-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/intro-triangle.svg"), url("../img/bg-inner-intro-mobile@2x.jpg");
+      background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-inner-intro-mobile@2x.jpg");
       // background-size: 100% 57px, 2400px auto;
     }
   }
 
   .inner-intro__name {
     width: 460px;
-    padding-bottom: 2%;
+    padding-top: 22%;
   }
 }
