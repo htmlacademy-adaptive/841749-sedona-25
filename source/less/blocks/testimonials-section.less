@@ -137,6 +137,8 @@
   background-color: #e5e5e5;
 }
 
+.field__input:focus,
+.field-contact__input:focus,
 .field__input:active,
 .field-contact__input:active {
   outline: 4px solid #e5e5e5;
@@ -295,6 +297,17 @@
   border: none;
   outline: none;
   resize: none;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus,
+  &:active {
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+    background-color: @white;
+  }
 }
 
 .textarea__text::placeholder {
