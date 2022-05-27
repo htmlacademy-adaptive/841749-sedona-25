@@ -11,12 +11,12 @@
 }
 
 .modal-failure--close {
-  // display: none;
+  display: none;
 }
 
 .modal-failure__section {
   position: relative;
-  top: 42px;
+  top: 445px;
   display: flex;
   flex-direction: column;
   flex: wrap;
@@ -84,6 +84,7 @@
 
 @media (min-width: @tablet-width) {
   .modal-failure__section {
+    top: 730px;
     width: 274px;
     padding: 50px 63px;
     padding-bottom: 34px;
@@ -108,5 +109,11 @@
     width: 272px;
     margin-bottom: 13px;
     font-size: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal-failure__section {
+    top: 665px;
   }
 }
