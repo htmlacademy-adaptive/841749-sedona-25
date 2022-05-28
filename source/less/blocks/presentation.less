@@ -14,6 +14,7 @@
 }
 
 .presentation__text {
+  display: inline-block;
   padding-bottom: 27px;
   font-size: 18px;
 }
@@ -21,10 +22,6 @@
 .presentation__description {
   margin: 0;
   padding-bottom: 38px;
-}
-
-.presentation__description br:nth-child(2) {
-  display: none;
 }
 
 .presentation__video-image {
@@ -60,25 +57,20 @@
 
 @media (min-width: @tablet-width) {
   .presentation__wrapper {
-    margin-bottom: 59px;
+    margin-bottom: 54px;
   }
 
   .presentation__text {
-    padding-bottom: 29px;
+    padding-right: 19%;
+    padding-left: 19%;
+    padding-bottom: 33px;
     font-size: 30px;
   }
 
   .presentation__description {
+    padding-right: 19%;
+    padding-left: 19%;
     padding-bottom: 89px;
-  }
-
-  .presentation__description br:nth-child(1),
-  .presentation__description br:nth-child(3) {
-    display: none;
-  }
-
-  .presentation__description br:nth-child(2) {
-    display: inline;
   }
 
   .presentation__video-image {
@@ -100,7 +92,7 @@
 
   @media (min-width: @desktop-width) {
     .presentation__wrapper {
-      margin-bottom: 102px;
+      margin-bottom: 94px;
     }
 
     .presentation__video-image {
@@ -115,6 +107,12 @@
 
     .presentation__icon-play {
       left: 47%;
+    }
+
+    .presentation__text,
+    .presentation__description {
+      padding-right: 350px;
+      padding-left: 350px;
     }
   }
 }
