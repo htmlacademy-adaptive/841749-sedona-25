@@ -1,5 +1,6 @@
 // @import "./blocks/site-list.less";
 .site-list {
+  position: relative;
   text-align: center;
 }
 
@@ -13,15 +14,15 @@
   color: @white;
   text-transform: uppercase;
   text-decoration: none;
-  border-top: 1px solid fade(#ffffff, 20%);
-  border-bottom: 1px solid fade(#010101, 20%);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgb(1, 1, 1, 0.2);
 
   &:hover {
     background-color: #669ec0;
   }
 
   &:active {
-    color: fade(@white, 30%);
+    color: rgba(255, 255, 255, 0.3);
     background-color: #5496bd;
   }
 }
@@ -60,7 +61,7 @@
     }
 
     &:active {
-      color: fade(@black, 30%);
+      color: rgba(255, 255, 255, 0.3);
       background-color: transparent;
     }
   }
@@ -78,6 +79,14 @@
   .site-list__logo .site-list__link {
     padding: 0;
     text-align: center;
+  }
+
+  .main-header__logo-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
   }
 }
 

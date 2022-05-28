@@ -1,24 +1,115 @@
 // @import "./blocks/modal-success.less";
 
 .modal-success {
-  display: none;
-  position: relative;
-  bottom: 696px;
-  width: 320px;
-  min-height: 323px;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-success--close {
+  display: none;
+}
+
+.modal-success__section {
+  position: relative;
+  top: 730px;
+  display: flex;
+  flex-direction: column;
+  flex: wrap;
+  align-items: center;
+  width: 320px;
+  margin: auto;
   background-color: @white;
   filter: drop-shadow(0 7px 15px rgba(0, 1, 1, 0.15));
 }
 
-.modal-success--container {
-  margin: auto;
+.modal-success__text-wrapper {
   padding: 39px;
   padding-bottom: 0;
 }
 
-.modal-succes__section {
-  display: flex;
-  flex-direction: column;
-  flex: wrap;
+.modal-success__header {
+  margin: 0;
+  padding-bottom: 24px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.modal-success__description {
+  margin: 0;
+  padding-bottom: 52px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+}
+
+.modal-success__button-wrapper {
+  background-color: #f2f2f2;
+}
+
+.modal-success__button {
+  width: 280px;
+  margin: 20px;
+  font-weight: 400;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+  }
+}
+
+.testimonials-filters__button--disabled:disabled {
+  background-color: #e5e5e5;
+  cursor: not-allowed;
+
+  &:hover,
+  &:active {
+    color: @white;
+    background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .modal-success__section {
+    top: 605px;
+    width: 640px;
+  }
+
+  .modal-success__text-wrapper {
+    padding: 54px 91px 0;
+  }
+
+  .modal-success__header {
+    padding-bottom: 28px;
+    font-size: 30px;
+  }
+
+  .modal-success__button {
+    width: 458px;
+    margin: 44px 91px;
+    padding-top: 19px;
+    padding-bottom: 14px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal-success__section {
+    top: 566px;
+  }
 }

@@ -57,6 +57,16 @@ const copyImages = () => {
     .pipe(gulp.dest('build/img'));
 }
 
+  // WebP
+
+const createWebp = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+    .pipe(squoosh({
+      webp: {}
+    }))
+    .pipe(gulp.dest('build/img'));
+}
+
 // SVG
 
 const svg = () =>
@@ -119,7 +129,7 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // Build
@@ -133,7 +143,8 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
-    sprite
+    sprite,
+    createWebp
   ),
 );
 
@@ -148,7 +159,8 @@ export default gulp.series(
     html,
     scripts,
     svg,
-    sprite
+    sprite,
+    createWebp
   ),
   gulp.series (
     server,

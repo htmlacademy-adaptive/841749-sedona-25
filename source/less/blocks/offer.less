@@ -10,6 +10,7 @@
 }
 
 .offer__sentence {
+  display: inline-block;
   padding-bottom: 20px;
   font-size: 21px;
   line-height: 26px;
@@ -17,16 +18,16 @@
 
 .offer__description {
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
 }
 
-.offer__description br:nth-child(2) {
+.offer__description br:nth-child(1) {
   display: none;
 }
 
 .offer__button {
   width: 284px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 21px;
 
   &:hover {
@@ -34,12 +35,12 @@
   }
 
   &:active {
-    color: fade(@white, 30%);
+    color: rgba(255, 255, 255, 0.3);
     background-color: #5496bd;
   }
 }
 
-.offer__button--disabled {
+.offer__button--disabled:disabled {
   background-color: #e5e5e5;
   cursor: not-allowed;
 
@@ -51,8 +52,7 @@
 }
 
 .offer__map {
-  height: 350px;
-  margin-bottom: 19px;
+  margin-bottom: 14px;
   background-image: url("../img/offer-map-marker.svg"), url("../img/offer-map-mobile.png");
   background-position: center, center;
   background-repeat: no-repeat;
@@ -69,6 +69,8 @@
 @media (min-width: @tablet-width) {
   .offer__wrapper {
     margin-bottom: 9px;
+    padding-right: 155px;
+    padding-left: 155px;
   }
 
   .offer__sentence {
@@ -81,12 +83,7 @@
     padding-bottom: 42px;
   }
 
-  .offer__description br:first-child,
-  .offer__description br:last-child {
-    display: none;
-  }
-
-  .offer__description br:nth-child(2) {
+  .offer__description br:nth-child(1) {
     display: inline;
   }
 
@@ -97,6 +94,7 @@
 
   .offer__map {
     height: 350px;
+    margin-bottom: 19px;
     background-image: url("../img/offer-map-marker.svg"), url("../img/offer-map-tablet.png");
     background-position: center, center;
     background-repeat: no-repeat;
