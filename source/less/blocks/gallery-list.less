@@ -29,15 +29,12 @@
 }
 
 .gallery-list__photo {
-  background-color: rgb(237, 187, 170);
-  background-size: 100%;
-}
-
-.gallery-list__photo img {
   display: block;
   width: 100%;
   height: 280px;
   object-fit: cover;
+  background-color: rgb(237, 187, 170);
+  background-size: 100%;
 }
 
 .gallery-list__wrapper {
@@ -146,14 +143,11 @@
   }
 
   .gallery-list__photo {
+    height: 267px;
     margin: 0;
   }
 
-  .gallery-list__photo img {
-    height: 267px;
-  }
-
-  .gallery-list__item--1 img {
+  .gallery-list__item--1 .gallery-list__photo {
     height: 400px;
   }
 
