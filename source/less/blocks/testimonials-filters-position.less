@@ -82,9 +82,8 @@
 
   .radio-button {
     display: grid;
-    grid-template-columns: repeat(3, 262px);
-    justify-content: center;
-    column-gap: 43px;
+    grid-template-columns: repeat(3, 308px);
+    padding: 0 36px;
   }
 
   .landmark {
@@ -93,10 +92,15 @@
   }
 
   .checkbox {
-    display: grid;
-    grid-template-columns: repeat(4, 185px);
-    justify-content: center;
-    column-gap: 43px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 31px;
+    column-gap: 0;
+  }
+
+  .checkbox__label {
+    margin-right: 64px;
   }
 
   .textarea__text {
