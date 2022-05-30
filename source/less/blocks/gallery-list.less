@@ -238,15 +238,18 @@
   .gallery-list__item {
     position: relative;
 
-
     .gallery-list__wrapper {
       position: absolute;
       bottom: 0;
-      width: fill-available;
+      width: 360px;
       z-index: 2;
       color: @white;
       background-color: rgba(0, 0, 0, 0.3);
     }
+  }
+
+  .gallery-list__item--1 .gallery-list__wrapper {
+    width: 1160px;
   }
 
   .gallery-list__item-author {
