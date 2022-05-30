@@ -7,7 +7,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: flex-start;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   padding-top: 24px;
   box-sizing: border-box;
 
@@ -126,7 +126,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-icon-phone@2x.png");
-    background-size: 116px auto;
+    background-size: 58px auto;
   }
 
   &::placeholder {
@@ -154,7 +154,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-icon-mail@2x.png");
-    background-size: 116px auto;
+    background-size: 58px auto;
   }
 }
 
@@ -336,7 +336,7 @@
 }
 
 .form-button {
-  padding-top: 26px;
+  padding-top: 29px;
   align-items: flex-end;
 }
 
@@ -393,7 +393,7 @@
   }
 
   .testimonials-section {
-    margin-bottom: 79px;
+    margin-bottom: 73px;
   }
 
   .testimonials-filters__title {
@@ -499,6 +499,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .testimonials-section {
+    margin-bottom: 82px;
+  }
+
   .review {
     margin-bottom: 27px;
   }
@@ -515,17 +519,21 @@
     width: 82%;
   }
 
+  .field-contact__name {
+    padding-left: 17%;
+  }
+
   .opinion .testimonials-filters__title {
     margin-bottom: 21px;
 
     &::before {
       width: 280px;
-      left: -355px;
+      left: -345px;
     }
 
     &::after {
       width: 280px;
-      right: -355px;
+      right: -345px;
     }
   }
 
@@ -544,7 +552,7 @@
   }
 
   .description .testimonials-filters__title {
-    margin-bottom: 5px;
+    margin-bottom: 0;
 
     &::before {
       width: 280px;
