@@ -1,7 +1,7 @@
 // @import "./blocks/advantages.less";
 
 .advantages-list__header {
-  padding-top: 34px;
+  padding-top: 32px;
   padding-bottom: 17px;
   text-align: center;
 }
@@ -27,7 +27,7 @@
 
 .advantages-list__item {
   padding-top: 40px;
-  padding-bottom: 25px;
+  padding-bottom: 27px;
   text-align: center;
 }
 
@@ -61,10 +61,6 @@
   padding-top: 30px;
 }
 
-// .advantages-list__item-subject br {
-//   display: none;
-// }
-
 .advantages-list__numbering {
   margin: 0;
   padding-bottom: 17px;
@@ -77,10 +73,6 @@
   font-weight: 400;
 }
 
-// .advantages-list__description-excerpt br:not(:nth-child(2)) {
-//   display: none;
-// }
-
 .advantages-list__item-picture {
   height: 260px;
   background-repeat: no-repeat;
@@ -91,31 +83,39 @@
   background-image: url("../img/bg-item-picture-city-mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-item-picture-city-mobile@2x.jpg");
-    background-size: 640px auto;
+    background-position: center;
+    background-size: 320px auto;
   }
 }
 
 .advantages-list__subject {
   padding-top: 25px;
-  padding-bottom: 31px;
+  padding-bottom: 29px;
 }
 
 .advantages-list__subject-item {
   position: relative;
-  padding-top: 10px;
-  padding-bottom: 19px;
+  padding-top: 8px;
+  padding-bottom: 22px;
   padding-left: 48px;
+}
+
+.advantages-list__subject-item:nth-child(2) {
+  padding-left: 52px;
+}
+
+.advantages-list__subject-item:nth-child(3) {
+  padding-left: 44px;
 }
 
 .advantages-list__icon {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 39px;
+  top: -2px;
+  left: -2px;
+  width: 41px;
   height: auto;
   fill: #81b3d2;
 }
@@ -137,17 +137,20 @@
 }
 
 .advantages-list__item-second {
+  padding-top: 38px;
   padding-bottom: 22px;
 }
 
 .advantages-list__item-picture--second {
+  min-width: 320px;
   background-color: #d4af9c;
   background-image: url("../img/bg-item-picture-bridge-mobile.jpg");
-  background-size: cover;
+  background-position: center;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-item-picture-bridge-mobile@2x.jpg");
-    background-size: 640px auto;
+    background-position: center;
+    background-size: 320px auto;
   }
 }
 
@@ -210,10 +213,6 @@
     line-height: 26px;
   }
 
-  // .advantages-list__title br:first-child {
-  //   display: none;
-  // }
-
   .advantages-list__item--triangle {
     background-image: none;
   }
@@ -242,10 +241,11 @@
     background-image: url("../img/bg-item-picture-city-tablet.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-item-picture-city-tablet@2x.jpg");
+      background-position: center;
+      background-size: 512px auto;
     }
   }
 
@@ -280,6 +280,14 @@
     text-align: center;
   }
 
+  .advantages-list__subject-item:nth-child(2) {
+    padding-left: 15px;
+  }
+
+  .advantages-list__subject-item:nth-child(3) {
+    padding-left: 13px;
+  }
+
   .advantages-list__subject-item:nth-child(2) .advantages-list__subject-description {
     padding-right: 18px;
     padding-left: 18px;
@@ -305,16 +313,17 @@
     height: 256px;
     min-width: 512px;
     background-image: url("../img/bg-item-picture-bridge-tablet.jpg");
-    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-item-picture-bridge-tablet@2x.jpg");
+      background-position: center;
+      background-size: 512px auto;
     }
   }
 
   .advantages-list__item-second {
     padding-top: 44px;
-    padding-right: 51px;
+    padding-right: 50px;
     padding-left: 51px;
   }
 
@@ -375,12 +384,14 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-item-picture-city-desktop@2x.jpg");
+      background-position: center;
+      background-size: 800px auto;
     }
   }
 
   .advantages-list__subject {
     gap: 4%;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
     padding-top: 45px;
   }
 
@@ -402,10 +413,12 @@
   .advantages-list__item-picture--second {
     min-width: 800px;
     background-image: url("../img/bg-item-picture-bridge-desktop.jpg");
-    background-size: cover;
+    background-position: center;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-item-picture-bridge-desktop@2x.jpg");
+      background-position: center;
+      background-size: 800px auto;
     }
   }
 
@@ -417,7 +430,7 @@
 
   .advantages-list__item-second .advantages-list__item-subject {
     padding-right: 32px;
-    padding-left: 33px;
+    padding-left: 32px;
   }
 
   .advantages-list__subject-title-padding {

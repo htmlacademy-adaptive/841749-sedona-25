@@ -5,6 +5,20 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  margin-bottom: 2px;
+}
+
+.opinion {
+  margin-bottom: 30px;
+}
+
+.landmark {
+  margin-bottom: 28px;
+}
+
+.description .testimonials-filters__title {
+  margin-top: -4px;
+  padding-bottom: 19px;
 }
 
 @media (min-width: @tablet-width) {
@@ -32,16 +46,17 @@
 
   .landmark {
     margin-top: 5px;
+    margin-bottom: -6px;
   }
 
-  .description {
-    margin-top: -13px;
-    margin-bottom: 0;
+  .description .testimonials-filters__title {
+    padding-bottom: 25px;
   }
 
   .radio-button {
     display: grid;
     grid-template-columns: 285px 285px;
+    column-gap: 10px;
     justify-content: center;
   }
 
@@ -66,6 +81,7 @@
     grid-column: 1/2;
     padding-top: 18px;
     padding-bottom: 12px;
+    padding-left: 11px;
   }
 
   .testimonials-filters__marked {
@@ -82,21 +98,25 @@
 
   .radio-button {
     display: grid;
-    grid-template-columns: repeat(3, 262px);
-    justify-content: center;
-    column-gap: 43px;
+    grid-template-columns: repeat(3, 297px);
+    padding-left: 30px;
   }
 
   .landmark {
     margin-top: 14px;
-    margin-bottom: 43px;
+    margin-bottom: 33px;
   }
 
   .checkbox {
-    display: grid;
-    grid-template-columns: repeat(4, 185px);
-    justify-content: center;
-    column-gap: 43px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 31px;
+    column-gap: 0;
+  }
+
+  .checkbox__label {
+    margin-right: 64px;
   }
 
   .textarea__text {
@@ -111,6 +131,7 @@
 
   .form-button {
     width: 80%;
-    margin: 0 auto;
+    margin: -6px auto;
+    padding: 0 96px;
   }
 }
